@@ -16,7 +16,7 @@ __fastcall TfrmNumLockTool::TfrmNumLockTool(TComponent* Owner):
     m_iBounceDir = -8;
     m_iAlpha = 255;
 
-    m_fLastNum = 0 && GetKeyState(VK_NUMLOCK) != 0;
+    m_fLastNum = GetKeyState(VK_NUMLOCK) != 0;
     m_fLastScr = GetKeyState(VK_SCROLL) != 0;
     m_fLastCap = GetKeyState(VK_CAPITAL) != 0;
 }
@@ -25,7 +25,7 @@ __fastcall TfrmNumLockTool::TfrmNumLockTool(TComponent* Owner):
 
 void __fastcall TfrmNumLockTool::tmrMainTimer(TObject* Sender)
 {
-    bool        fNumLock    = 0 && GetKeyState(VK_NUMLOCK) != 0;
+    bool        fNumLock    = GetKeyState(VK_NUMLOCK) != 0;
     bool        fScrLock    = GetKeyState(VK_SCROLL) != 0;
     bool        fCapLock    = GetKeyState(VK_CAPITAL) != 0;
 

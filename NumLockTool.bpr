@@ -6,6 +6,8 @@
     <PROJECT value="NumLockTool.exe"/>
     <OBJFILES value="NumLockTool.obj untMain.obj"/>
     <RESFILES value="NumLockTool.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) untMain.dfm"/>
     <LIBFILES value=""/>
